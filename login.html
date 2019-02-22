@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>欢迎登录</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+body{
+  background: #fff;
+}
+.l-head {
+width: 100%;
+height: 100px;
+}
+.logo {
+  margin-top: 3px;
+}
+.header-main{
+  width:1200px;
+	margin:0 auto;
+}
+.l-head .loginR {
+  margin-top: 35px;
+}
+.over{
+  overflow: hidden;
+}
+div.login-box{
+  background:url("img/header/bg-login.png") top center no-repeat;
+  width: 100%;
+  height: 560px;
+}
+.info{
+  width: 300px;
+  height: 350px;
+  margin-top: 80px;
+  padding: 25px;
+  background: #fff;
+}
+
+.footer{
+  margin-top:50px;
+  width:100%;
+  font-size: 16px;
+  font-weight:500;
+}
+.login-box .info h5 a{
+  font-size: 14px;
+  color:#e4393c;
+}
+.login-box .info h5{
+  font-size: 18px;
+  color:#000;
+}
+.login-cut{
+  margin: 10px 0;
+  width: 100%;
+}
+.login-cut{
+  background: #df5b6f;
+}
+.login-cut>p{
+  padding: 9px 0px;
+  font-size: 18px;
+  text-align: center;
+  color:#fff;
+
+}
+.login-tips{
+  background: #fff6d2;
+  border: solid 1px #ffe57d;
+  height: 18px;
+  line-height: 18px;
+  margin: 3px 0px;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+}
+#login>div{
+  border:1px solid #ddd;
+}
+#login div input{
+  font-size: 16px;
+  margin-left:5px;
+  height:31px;
+  color:#666;
+  border:none;
+  outline: none;
+}
+#login div{
+  margin-top:10px;
+}
+#login span{
+  line-height: 40px;
+  height:40px;
+}
+#login span a{
+  color:red;
+}
+#login input.login-go{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  background: #e93854;
+  color: #fff;
+  border-radius:5px;
+  border:1px solid rgba(214, 91, 91, 0.747);
+}
+p.link{
+  height:50px;
+  margin-top:15px;
+  text-align: center;
+}
+.login-box p.link img{
+  margin-top:10px;
+  margin-right: 8%;
+}
+.login-box p.link img:hover{
+  opacity: .5;
+  transform:translate(2px,2px);
+}
+  </style>
+</head>
+<body>
+  <div class="login-bg">
+    <div class="l-head">
+      <div class="header-main over">
+        <div class="lf logo">
+          <a href="index.html">
+            <img src="img/header/login.png" height="95px">
+          </a>
+        </div>
+        <div class="rt loginR">
+          <img src="img/header/l-head.png">
+        </div>
+      </div>
+    </div>
+    <div class="login-box">
+      <div class="main over" height="560px">
+        <div class="info rt">
+          <h5>
+            登录惠利商城
+            <a href="register.html" class="rt">快速注册></a>
+          </h5>
+          <div class="login-cut">
+            <p >
+              惠利账号登录
+            </p>
+          </div>
+          <div class="login-tips over">
+              公共场所不建议记住密码，以防账号丢失
+          </div>
+          <form id="login">
+            <div>
+              <img src="img/header/use.png" alt="">
+              <input id="txtName" name="uname" value="dangdang" placeholder="请输入账号"/><br>
+            </div>
+            <div>
+              <img src="img/header/pw.png" alt="">
+              <input id="txtPwd" type="password" name="upwd" value="123456" placeholder="请输入密码"/><br>
+            </div>
+            <span class="clear">
+              <label class="lf">
+                <input type="checkbox">
+                记住密码
+              </label>
+              <a href="javascript:;" class="rt">忘记密码？</a>
+            </span>
+            <input type="button" value="登录" class="login-go">
+          </form>
+          <p class="link">
+            <a href="javascript:;">
+              <img src="img/header/xl.png" alt="">
+            </a>
+            <a href="javascript:;">
+              <img src="img/header/qq.png" alt="">
+            </a>
+            <a href="javascript:;">
+              <img src="img/header/vx.png" alt="">
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div id="copy">
+          <p>京公网安备 11000002000088号<span>|</span>京ICP证070359号<span>|</span>互联网药品信息服务资格证编号(京)-经营性-2014-0008<span>|</span>新出发京零 字第大120007号</p>
+          <p>互联网出版许可证编号新出网证(京)字150号<span>|</span>出版物经营许可证<span>|</span>网络文化经营许可证京网文[2014]2148-348号<span>|</span>违法和不良信息举报电话：4006561155</p>
+          <p>Copyright © 2004 - 2018  京东JD.com 版权所有<span>|</span>消费者维权热线：4006067733</p>
+        </div>
+    </div>
+  </div>
+	<script src="js/jquery.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

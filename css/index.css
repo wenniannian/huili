@@ -1,0 +1,381 @@
+#indexone{
+	max-width:1450px;
+	margin:0 auto;
+}
+											/*****轮播图****/
+#banner{
+	width:1300px;
+	margin:0 auto;
+	height:400px;
+	overflow:hidden;
+	position:relative;/*为了子元素的绝对定位*/
+}
+#banner ul.banner-img li{
+	float:left;
+}
+
+.banner-img{
+	position:absolute;
+}
+/*左右按钮*/
+.ck-left,.ck-right{
+	 width:30px;
+	 height:56px;
+	 position:absolute;
+	 background: #000;
+	 top:150px;
+	 border-radius:25px;
+}
+.ck-left{
+	 left:5px;
+	 background:#fff url(../img/index/arrow-left.png) no-repeat center center;
+}
+.ck-right{
+	 right:5px;
+	 background:#fff url(../img/index/arrow-right.png) no-repeat center center;
+}
+/*透明度和过渡效果*/
+.ck-slide{
+	 opacity:.3;
+	 transition:all 0.5s;
+}
+.ck-slide:hover{
+		opacity:.5;
+}
+/*导航小圆点*/
+#banner ul.indicators{
+	position:absolute; /*绝对定位*/
+	left:666px;
+	bottom:20px;
+}
+#banner ul.indicators li{
+	 width:10px;
+	 height:10px;
+	 border-radius:50%;
+	 background:#fff;
+	 float:left;
+	 margin-right:5px;
+}
+
+#banner ul.indicators li.hover{
+	cursor:pointer;
+	background-color: #ff3a3c;
+}
+								/*推荐三图*/
+div.cent{ margin-top: 30px; }
+#rcd{
+	position: relative;
+	width:1300px;
+	height:500px;
+	margin:0 auto;
+}
+#rcd>div.rcd-top{
+	font-size:30px;
+	color: #e4393c;
+	font-weight:bold;
+	border-bottom:3px dashed #7FDCFE;
+	padding-bottom:5px;
+	margin-bottom:20px;
+	text-align: center;
+
+}
+#dd{
+	/*position:relative;*/
+	width: 1300px;
+	height: 430px;
+}
+#dd a:first-child{
+	position:absolute;
+	left:10px;
+}
+#dd a:nth-child(2){
+	position:absolute;
+	left:440px;
+}
+#dd a:last-child{
+	position:absolute;
+	left:870px;
+}
+#dd .dd1{
+	width:420px;
+	height:420px;
+	z-index:1;
+	position:absolute;
+}
+#dd .dd2{
+	width:420px;
+	height:420px;
+	background: blue;
+	z-index:1;
+	position:absolute;
+}
+#dd .dd3{
+	width:420px;
+	height:420px;
+	background: purple;
+	z-index:1;
+	position:absolute;
+}
+#dd .dtop{
+	width:420px;
+	height:420px;
+	z-index:2;
+	position:absolute;
+	top:0px;
+}
+#dd .dtop:hover{
+	opacity: 0;
+	transition:all .5s linear;
+}
+/*--------------------------楼层---------------------------*/
+/*设置楼层公用标题样式*/
+.floor-title{
+	left:20px;
+	position: relative;
+}
+.floor-title>.floor-text{
+	font-size:25px;
+	color:rgb(85, 15, 15);
+}
+.floor-title>img{
+	float:left;
+	position:relative;
+	top:-8px;
+	margin-right:10px;
+}
+div.f1{
+    margin-top:20px;
+ }
+/***************1楼首页推荐************************/
+ul#F1>li>div>div.in{
+	height:85px;
+}
+ul#F1{
+	width: 1270px;
+	position: relative;
+	left: 10px;
+}
+ul#F1>li div b.baoyou {
+	font-size: 10px;
+	color: white;
+	background: #f40;
+	padding: 3px 15px;
+	position: relative;
+	right:3px;
+	top:2px;
+	font-weight: normal;
+	border-radius: 5px;
+}
+ul#F1>li div p+p{
+	top:-5px;
+	position: relative;
+}
+#F1>li{
+	border:1px solid rgba(238, 51, 51, 0.596);
+	position: relative;
+}
+#F1>li p{
+	padding-left:5px;
+}
+#F1>li:nth-child(1),#F1>li:nth-child(2),#F1>li:nth-child(3){
+	width:23%;margin-right:14px;
+	overflow:hidden;float:left;
+	transition:all .5s linear;
+}
+#F1>li:nth-child(1):hover,#F1>li:nth-child(2):hover,#F1>li:nth-child(3):hover{
+	transform:scale(1.05);
+}
+#F1>li>a>img{
+	width:100%;
+}
+.div_Recommend ul#F1 li .price{
+	font-size:20px;
+}
+#F1>li:nth-child(4),#F1>li:nth-child(5),#F1>li:nth-child(6),#F1>li:nth-child(7){
+	width:11.9%;float:right;
+	opacity:1;
+	margin-left:14px;
+}
+#F1>li:nth-child(4)>p,#F1>li:nth-child(5)>p,#F1>li:nth-child(6)>p,#F1>li:nth-child(7)>p{
+	font-size:13px;
+	height:34px;
+	overflow:hidden;
+}
+.active_img:hover{
+	animation:lirotate 1s linear;
+}
+@keyframes lirotate{
+	0%{transform:rotateY(0);}
+	50%{transform:rotateY(180deg);}
+	100%{transform:rotateY(0);}
+}
+ul#F1>li>div{
+	overflow:hidden;
+}
+ul#F1>li>div>:first-child{
+	margin-bottom:10px;
+	margin-top:10px;
+	height:36px;
+	overflow:hidden;
+}
+ul#F1>li>div>div{
+	position:absolute;
+	bottom:0;
+	background:#fff;
+	height:0;
+	width:100%;
+	text-align:center;
+	transition:all .5s linear;
+}
+ul#F1>li>div>div.in{
+	height:85px;
+}
+ul#F1>li>div>div>:first-child{
+	margin:8px;
+}
+ul#F1>li>div>div>:first-child>:first-child{
+	font:bold 25px "华文行楷";
+	margin-right:10px;
+	color:#d4393c;
+}
+ul#F1>li>div>div>:nth-child(2){
+	padding:3px 10px;
+	background:#fff;
+	color:#e4393c;
+	border:1px solid #e4393c;
+	border-radius:5px;
+	transition:all .5s linear;
+}
+ul#F1>li>div>div>:last-child{
+	margin-left:10px;
+	padding:3px 10px;
+	background:#e4393c;
+	color:#fff;
+	border:1px solid #e4393c;
+	border-radius:5px;
+	transition:all .5s linear;
+}
+
+/*2F结构*/
+div.f1>div.content{
+	width:1270px;
+	/* height:850px; */
+	margin:0 auto;
+	display:flex;						/*弹性布局*/
+	flex-wrap:wrap;						/*子元素自动换行*/
+	justify-content:space-between;		/*子元素两端对齐*/
+}
+#floor{
+	margin: 0 auto;
+	width:1300px;
+}
+div.content>ul>li{
+	float:left;
+	background:#eee;
+	width: 240px;
+    height: 340px;
+	margin-right:10px;
+	margin-top: 10px;
+	border:2px solid transparent;		/*↓解决hover后出现2px边框li会抖动的问题*/
+}
+div.content>ul>li:hover{
+	border: 2px solid #757575;
+	box-shadow: 0 0 30px 3px #333;
+}
+div.content ul li img{
+	transition: all .5s linear;
+	height:220px;
+	width: 220px;
+}
+div.content ul li img:hover{
+	transform: scale(1.05);
+}
+a.view {
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: linear-gradient(to bottom,#f3b33d,#FF3C56);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    left: 30px;
+}
+.price{
+	font-size:24px;
+	color:#e4393c;
+	margin-bottom:4px;
+}
+.dwf{
+	position:relative;
+}
+.floor-li{
+	position: absolute;
+	left:6px;
+	top:8px;
+}
+.floor-li p.pp{
+	margin:3px 0;
+}
+/*左侧楼层滚动条*/
+#lift{
+    margin-top: 25px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    background-color: #918888;
+    right: 10px;
+    top:200px;
+}
+.lift_list{ display: block; list-style:none }
+.lift_item {
+    border-top: 1px solid #b1aaaa;
+    transition: background-color .1s;
+    transition:all .3s linear;
+}
+.lift_btn {
+    overflow: hidden;
+    display: block;
+    width: 24px;
+    padding: 10px 5px;
+    line-height: 14px;
+    text-align: center;
+    color: #fefefe;
+    transition: color .1s;
+}
+.lift_item:hover, .lift_item_on {
+    position: relative;
+    border-bottom: 1px solid #d70b1c;
+    margin-bottom: -1px;
+    border-color: #d70b1c;
+    background-color: #d70b1c;
+}
+.lift_btn {
+    overflow: hidden;
+    display: block;
+    width: 34px;
+    padding: 10px 5px;
+    line-height: 14px;
+    text-align: center;
+    color: #fefefe;
+    transition: color .1s;
+}
+
+/*-----------------------已经到底了 ul -----------------------*/
+#is_null{
+	margin-top: 80px;
+}
+#is_null>li{
+	border-top: 1px solid #f40;
+	margin-top: 20px;
+	font-size: 20px;
+	width:100%;
+}
+#is_null>li>b{
+	position: relative;
+    top: -15px;
+    background: #f5f5f5;
+    font-size: 20px;
+}

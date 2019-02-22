@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>商品详情页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/product-details.css">
+</head>
+<body>
+  <div>
+        <!--1.网页头部-->
+		<header id="header">
+				<!-- <iframe id="header" src="header.html" frameborder="0"></iframe> -->
+				<img src="img/loading.gif" alt="加载中..." >
+		</header>
+    <div class="main">
+      <!--2、面包屑导航 ：#bread-crumb -->
+      <div id="bread-crumb">
+        <a href="index.html">首页</a>
+        <span>&gt;</span>
+        <a href="javascript:;">夏季新品</a>
+        <span>&gt;</span>
+        <a href="javascript:;">男装</a>
+      </div>
+      <div id="product-details">
+        <div id="preview">
+          <div id="mediumDiv">
+            <img id="mImg" src="img/loading.gif">
+            <div id="mask"></div>
+            <div id="superMask"></div>
+          </div>
+          <div id="largeDiv"></div>
+          <h1>
+            <a class="backward disabled"></a>
+            <a class="forward"></a>
+            <ul id="icon_list">
+              <img src="img/loading.gif" alt="加载中..." >
+              <!-- <li class="i1"><img src="${pic.sm}" data-md="${pic.md}" data-lg="${pic.lg}"></li> -->
+            </ul>
+          </h1>
+        </div>
+        <!--3.2 右上 ：文字信息 #show-details width:490px-->
+        <div id="show-details">
+          <h1></h1>
+          <h3>
+            <a href="javascript:;"></a>
+          </h3>
+          <div class="price">
+            <div class="stu-price">
+              <b>学员售价：</b>
+              <span>¥</span>
+            </div>
+            <div class="promise">
+              <b>服务承诺：</b>
+            </div>
+          </div>
+          <!-- 客服 -->
+          <p class="parameter">
+            <b>客服：</b>
+            <span>联系客服</span>
+            <img src="img/product_detail/kefuf.gif">
+          </p>
+          <!-- 规格 -->
+          <div class="spec clear">
+            <p>规格：</p>
+            <div id="sml">
+              <!-- <a href="product_details.html?lid=${lid}" class=${
+                lid===product.lid?"active":""
+              }>${spec}</a> -->
+              <a href="javascript:;" class="active">S</a>
+              <a href="javascript:;">M</a>
+              <a href="javascript:;">L</a>
+              <a href="javascript:;">XL</a>
+            </div>
+          </div>
+          <!-- 数量 -->
+          <p class="account">
+            <span>数量：</span>
+            <button class="number-reduce">-</button>
+            <input type="text" value="1">
+            <button class="number-add">+</button>
+          </p>
+          <!-- 购买部分 -->
+          <div class="shops">
+            <a href="cart.html" class="buy">立即购买</a>
+            <a href="javascript:;" class="cart">
+              <img src="img/product_detail/product_detail_img7.png" alt="">
+              加入购物车
+            </a>
+            <a href="javascript:;" class="collection">
+              <img src="img/product_detail/product_detail_img6.png">
+              <br>
+              收藏
+            </a>
+          </div>
+        </div>
+        <!--3.3 下 ：为你推荐 #recommend -->
+        <div id="recommend"class="clear">
+          <p>为你推荐<span>大家都在看</span></p>
+          <div id="demo">
+            <div id="indemo" class="lf">
+              <div id="demo1" class="lf"><!-- 第一个宽度显示 -->
+                <div class="detail_1 lf">
+                  <div class="detail_img1">
+                    <a href="product_details.html?lid=3">
+                    <img src="img/product/md/3-4.jpg" border="0" width="205px" height="140px">
+                    </a>
+                  </div>
+                  <p>HLA海澜之家简约动物印花短袖T恤</p>
+                </div>
+                <div class="detail_1 lf">
+                  <div class="detail_img1">
+                    <a href="product_details.html?lid=11">
+                      <img src="img/product/md/aj1-3.jpg" border="0" width="205px" height="140px">
+                    </a>
+                  </div>
+                  <p>耐克AIR JORDAN 1 OG Bred Toe AJ1黑红脚趾</p>
+                </div>
+                <div class="detail_1 lf">
+                  <div class="detail_img1">
+                    <a href="product_details.html?lid=21">
+                      <img src="img/product/md/21-1.jpg" border="0" width="205px" height="140px">
+                    </a>
+                  </div>
+                  <p>【七匹狼】短袖t恤 男士丝光棉纯色休闲短袖polo衫 男装 (黑色)</p>
+                </div>
+                <div class="detail_1 lf">
+                  <div class="detail_img1">
+                    <a href="product_details.html?lid=30">
+                      <img src="img/product/md/cid29-2.jpg" border="0" width="205px" height="140px">
+                    </a>
+                  </div>
+                  <p>沙驰（SATCHI）休闲鞋男鞋春夏季板鞋布鞋男小白鞋 </p>
+                </div>
+                <!--</div>-->
+              </div>
+              <div id="demo2" class="lf"></div>
+            </div>
+            <!-- 宽度超大 -->
+          </div>
+          <!-- 外面大框 -->
+        </div>
+      </div>
+      <!--4、商品详情：#item-info-->
+      <div id="item-info">
+        <!--1、左侧：商品详情，商品评价(800px)-->
+        <div id="details">
+                <!--2、右侧：加入购物车(160px)-->
+            <ul id="addCart">
+                <li>
+                  <!-- <img src="img/product_detail/product_detail_img9.png" alt=""> -->
+                </li>
+                <li>
+                  <img src="img/product_detail/product_detail_icon_g_1.png" alt="">
+                  <a href="#param">规格参数</a>
+                </li>
+                <li>
+                  <img src="img/product_detail/product_detail_icon_t_1.png" alt="">
+                  <a href="#product-intro">商品介绍</a>
+                </li>
+                <li>
+                  <img src="img/product_detail/product_detail_icon_d_1.png" alt="">
+                  <a href="#sale-protection">售后保障</a>
+                </li>
+                <li>
+                  <img src="img/product_detail/product_detail_icon_bao_1.png" alt="">
+                  <a href="#packing-list">包装清单</a>
+                </li>
+                <!-- <li>
+                  <img src="img/product_detail/product_detail_icon_up_1.png" alt="">
+                  <a href="javascript:;">回到顶部</a>
+                </li> -->
+              </ul>
+          <!-- 1、页签 -->
+          <ul class="tab">
+            <li class="active">
+              <a href="javascript:;">商品详情</a>
+            </li>
+            <li>
+              <a href="javascript:;">商品评价</a>
+            </li>
+          </ul>
+          
+          <!--2、规格参数-->
+          <div id="param">
+            <p>
+              规格参数
+              <img src="img/product_detail/product_detail_icon_1.png">
+            </p>
+            <ul>
+              <li><img src="img/loading.gif" alt="加载中..." ></li>
+              <!--
+              <li>
+                <a href="javascript:;">品牌：${lname}</a>
+              </li>
+              <li>
+                <a  href="javascript:;" title="${title}">商品名称：${title}</a>
+              </li>
+              <li>
+                <a  href="javascript:;">商品编号：${shelf_time}</a>
+              </li>
+              <li>
+                <a href="javascript:;">商品毛重：500.00g</a>
+              </li>
+              <li>
+                <a href="javascript:;">商品产地：中国大陆</a>
+              </li>
+              -->
+            </ul>
+          </div>
+          <!--3、商品介绍-->
+           <div id="product-intro">
+            <!-- <img src="img/product/detail/introduce1.jpg"> -->
+          </div>
+          <!--4、售后保障-->
+          <div id="sale-protection">
+            <p>
+              售后保障
+              <img src="img/product_detail/product_detail_icon_3.png">
+            </p>
+            <div>
+              <p class="title">
+                <img src="img/product_detail/product_detail_img16.png" alt="">
+                正品保障
+              </p>
+              <p class="content">
+                惠利商城向您保证所售商品均为正品行货，惠利自营商品开具机打发票或电子发票。
+              </p>
+              <p class="title">
+                <img src="img/product_detail/product_detail_img16.png" alt="">
+                全国联保
+              </p>
+              <p class="content">
+                凭质保证书及惠利商城发票，可享受全国联保服务，与您亲临商场选购的商品享受相同的质量保证。
+                惠利商城还为您提供具有竞争力的商品价格和运费政策，请您放心购买！ 注：因厂家会在没有任何
+                提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产
+                地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城
+                没有及时更新，请大家谅解！
+              </p>
+            </div>
+          </div>
+          <!--5、包装清单-->
+          <div id="packing-list">
+            <p>
+              价格说明
+              <img src="img/product_detail/product_detail_icon_2.png">
+            </p>
+            <div>
+              <p class="content">
+                  商品展示的参考价，可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）
+                  或该商品在1号店平台曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价、销
+                  售商门店曾经展示过的销售价等可能会与您购物时展示的不一致，该价格仅供您参考。
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+        <!--6、页面最底部-->
+		<footer id="footer">
+				<img src="img/loading.gif" class="loading">
+		</footer>
+  </div>
+
+  <script src="js/jquery.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/details.js"></script>
+</body>
+</html>

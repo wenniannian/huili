@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>商品列表-学子商城</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+  <header id="header">
+      <img src="img/loading.gif" alt="加载中..." >
+    </header>
+    <div id="Screening">
+          <!--筛选框-->
+        <div class="choose">
+            <a href="javascript:;" id="updown">收起</a>
+            <ul id="choose-nav" class="clear in">
+              <li>
+                <b>已选：</b>
+                <strong id="choose-kw"></strong>
+                <span class="clearAll">清空全部</span>
+                <span class="kwSearch">立即搜索</span>
+              </li>
+              <li class="choose-logo clear">
+                <b>品牌：</b>
+                <a href="javascript:;" class="selected" >全部</a>
+                <a href="javascript:;">七匹狼(SEPTWOLVES)</a>
+                <a href="javascript:;">海澜之家(HLA)</a>
+                <a href="javascript:;">太平鸟(PEACEBIRD)</a>
+                <a href="javascript:;">美特斯邦威(MetersBonwe)</a>
+                <a href="javascript:;">森马(Semir)</a>
+              </li>
+              <li class="choose-hot">
+                <b>流行元素：</b>
+                <a href="javascript:;" class="selected">全部</a>
+                <a href="javascript:;">潮流</a>
+                <a href="javascript:;">韩版</a>
+                <a href="javascript:;">嘻哈</a>
+                <a href="javascript:;">勾画</a>
+                <a href="javascript:;">刺绣</a>
+                <a href="javascript:;">复古</a>
+                <a href="javascript:;">拼接</a>
+                <a href="javascript:;">金属元素</a>
+                <a href="javascript:;">图腾</a>
+                <a href="javascript:;">撞色</a>
+                <a href="javascript:;">补丁</a>
+              </li>
+              <li class="choose-size">
+                <b>尺码：</b>
+                <a href="javascript:;" class="selected">全部</a>
+                <a href="javascript:;">S</a>
+                <a href="javascript:;">M</a>
+                <a href="javascript:;">L</a>
+                <a href="javascript:;">XL</a>
+                <a href="javascript:;">XXL</a>
+              </li>
+              <li class="choose-time">
+                <b>主要材质：</b>
+                <a href="javascript:;" class="selected">全部</a>
+                <a href="javascript:;" >棉纶</a>
+                <a href="javascript:;">蚕丝</a>
+                <a href="javascript:;">亚麻</a>
+                <a href="javascript:;">涤纶</a>
+                <a href="javascript:;">莫代尔</a>
+                <a href="javascript:;">羊绒</a>
+                <a href="javascript:;">冰丝</a>
+                <a href="javascript:;">氨纶</a>
+              </li>
+              <li class="choose-type">
+                <b>适合人群：</b>
+                <a href="javascript:;" class="selected">全部</a>
+                <a href="javascript:;">亲子装<img src="" alt=""></a>
+                <a href="javascript:;">老年<img src="" alt=""></a>
+                <a href="javascript:;">青年<img src="" alt=""></a>
+                <a href="javascript:;">中年<img src="" alt=""></a>
+                <a href="javascript:;">男士<img src="" alt=""></a>
+                <a href="javascript:;">女士<img src="" alt=""></a>
+                <a href="javascript:;">儿童<img src="" alt=""></a>
+                <a href="javascript:;">情侣装<img src="" alt=""></a>
+                <a href="javascript:;">大码<img src="" alt=""></a>
+                <a href="javascript:;">中性<img src="" alt=""></a>
+              </li>	
+            </ul>
+        </div>
+          <!--排序框-->
+        <div class="sort">
+					<div class="sort-by">
+						<ul class="clear">
+							<li class="focus">综合
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" class="down" title="降序"></polyline>
+									<polyline points="0,13 8,5 16,13" fill="#aaa" class="up" title="升序"></polyline>
+								</svg>
+							</li>
+							<li>人气
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" title="降序"></polyline>
+									<polyline points="0,13 8,5 16,13" fill="#aaa" title="升序"></polyline>
+								</svg>
+							</li>
+							<li>销量
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" title="降序"></polyline>
+ 									<polyline points="0,13 8,5 16,13" fill="#aaa" title="升序"></polyline>
+								</svg>
+							</li>
+							<li>信用
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" title="降序"></polyline>
+ 									<polyline points="0,13 8,5 16,13" fill="#aaa" title="升序"></polyline>
+								</svg>
+							</li>
+							<li>价格
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" class="down" title="降序"></polyline>
+ 									<polyline points="0,13 8,5 16,13" fill="#aaa" class="up fade" title="升序"></polyline>
+								</svg>
+							</li>
+						</ul>
+					</div>
+					<div class="sort-checked">
+						<ul class="clear">
+							<li>	
+								<input type="checkbox" checked>包邮
+							</li>
+							<li>	
+								<input type="checkbox">货到付款
+							</li>
+							<li>	
+								<input type="checkbox">正品保障
+							</li>
+							<li>	
+								<input type="checkbox">7+天内退货
+							</li>
+							<li>	
+								<input type="checkbox">赠送退货运费险
+							</li>
+						</ul>
+					</div>
+				</div>
+    </div>
+  <div class="product_main">
+    <!--3、页面主体内容-->
+    <div id="product-list">
+      <!--1、左：商品列表(750px)-->
+      <div id="plist">
+        <p class="title clear"></p>
+        <ul id="show-list" class="clear">
+          <!-- <li>
+            <a href="product-details.html?lid=${p.lid}" class='sla'>
+              <img src="img/product/md/57b12a31N8f4f75a3.jpg" alt="">
+            </a>
+            <p>
+              ¥<span class="price">6988.00</span>
+              <a href="product-details.html?lid=${p.lid}">Apple MacBook Air 13.3英寸笔记本 银色(Core i5 处理器/8GB内存/128GB SSD闪存 MMGF2CH/A)</a>
+            </p>
+            <div>
+              <span class="reduce">-</span>
+              <input type="text" value="1">
+              <span class="add">+</span>
+              <a href="javascript:;" class="addCart">加入购物车</a>
+            </div>
+          </li> -->
+        </ul>
+        <!--页码-->
+        <div id="pages">
+          <!-- <a href="javascript:;" class="previous disabled">上一页</a>
+          <a href="javascript:;" class="current">1</a>
+          <a href="javascript:;">2</a> -->
+          <!-- <a href="javascript:;" class="next">下一页</a> -->
+        </div>
+      </div>
+      <!--2、右侧-->
+      <!-- <div id='recommend'>
+        轮播图
+      </div> -->
+    </div>
+  </div>
+  <footer id="footer">
+      <img src="img/loading.gif" alt="加载中..." >
+    </footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+     <!--1、网页头部-->
+    <header id="header">
+    </header>
+  <div class="main">
+    <!--2、购物车主体-->
+    <div id="shopping-cart">
+      <!--2.1 标题行-->
+      <div class="title">
+        <b>购物车</b>
+        <p>
+          已选
+          <span class="total color">0</span>
+          件商品
+          <span>合计(不计运费)</span>
+          <span class="totalPrices color sum">0.00</span>
+          <span class="unit color">元</span>
+        </p>
+      </div>
+      <!--2.2 内容块-->
+      <div id="box">
+        <!--2.2.1 内容-->
+        <div id="content-box">
+          <div class="imfor-top">
+            <div class="check-top">
+              <img src="img/product_detail/product_normal.png" alt="">
+              全选
+            </div>
+            <div class="product-top">商品</div>
+            <div class="price-top">单价(元)</div>
+            <div class="num-top">数量</div>
+            <div class="total-top">金额</div>
+            <div class="del-top">操作</div>
+          </div>
+          <div id="content-box-body">
+            <!--1、商品1-->
+            <div class="imfor">
+              <div class="check">
+                <img src="img/product_detail/product_normal.png" alt="">
+              </div>
+              <div class="product">
+                <a href="javascript:;">
+                  <img src="img/product/sm/1-1.jpg" alt="">
+                </a>
+                <span class="desc">
+                  <a href="javascript:;">HLA海澜之家短袖T恤男2018夏季新品风景印花休闲舒适透气HNTBJ2E092A漂白花纹</a>
+                </span>
+                <p class="col">
+                  <span>规格：</span>
+                  <span class="color-desc">白色 XL</span>
+                </p>
+              </div>
+              <div class="price">
+                <p class="price-desc"> <b>￥</b>179.00</p>
+              </div>
+              <div class="num">
+                <span class="reduce">&nbsp;-&nbsp;</span>
+                <input type="text" value="1">
+                <span class="add">&nbsp;+&nbsp;</span>
+              </div>
+              <div class="total-price">
+                <span>￥</span>
+                <span>179.00</span>
+              </div>
+              <div class="del">
+                <a href="javascript:;">删除</a>
+              </div>
+            </div>
+             <!--1、商品2-->
+             <div class="imfor">
+                <div class="check">
+                  <img src="img/product_detail/product_normal.png" alt="">
+                </div>
+                <div class="product">
+                  <a href="javascript:;">
+                    <img src="img/product/sm/2-1.jpg" alt="">
+                  </a>
+                  <span class="desc">
+                    <a href="javascript:;">HLA海澜之家短袖T恤男2018夏季新品舒适基础款简约圆领HNTBJ2E153A藏青</a>
+                  </span>
+                  <p class="col">
+                    <span>规格：</span>
+                    <span class="color-desc">藏青色 L</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <p class="price-desc"> <b>￥</b>68.00</p>
+                </div>
+                <div class="num">
+                  <span class="reduce">&nbsp;-&nbsp;</span>
+                  <input type="text" value="1">
+                  <span class="add">&nbsp;+&nbsp;</span>
+                </div>
+                <div class="total-price">
+                  <span>￥</span>
+                  <span>68.00</span>
+                </div>
+                <div class="del">
+                  <a href="javascript:;">删除</a>
+                </div>
+              </div>
+               <!--1、商品3-->
+            <div class="imfor">
+                <div class="check">
+                  <img src="img/product_detail/product_normal.png" alt="">
+                </div>
+                <div class="product">
+                  <a href="javascript:;">
+                    <img src="img/product/sm/3-1.jpg" alt="">
+                  </a>
+                  <span class="desc">
+                    <a href="javascript:;">HLA海澜之家简约动物印花短袖T恤2018夏季新品微弹舒适新款短T男生HNTBJ2E042A 蓝灰花纹</a>
+                  </span>
+                  <p class="col">
+                    <span>规格：</span>
+                    <span class="color-desc">蓝灰 L</span>
+                  </p>
+                </div>
+                <div class="price">
+                  <p class="price-desc"> <b>￥</b>129.00</p>
+                </div>
+                <div class="num">
+                  <span class="reduce">&nbsp;-&nbsp;</span>
+                  <input type="text" value="1">
+                  <span class="add">&nbsp;+&nbsp;</span>
+                </div>
+                <div class="total-price">
+                  <span>￥</span>
+                  <span>129.00</span>
+                </div>
+                <div class="del">
+                  <a href="javascript:;">删除</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!--2.2.2 计算-->
+        <div class="foot">
+          <div class="base">
+            <div class="all">
+              <span>
+                <img id="footerCheckAll" src="img/product_detail/product_normal.png" alt="">
+              </span>
+              全选
+            </div>
+            <a href="javascript:;">删除</a>
+            <div class="foot-qk">清空失效产品</div>
+          </div>
+          <div class="go-price">
+            <div class="foot-selected">已选<span class="totalOne color">0</span>件商品</div>
+            <div class="foot-tol">
+              <span>合计(不含运费)：</span>
+              <span class="foot-price">0.00</span>
+              <span class="foot-desc">元</span>
+            </div>
+            <div class="foot-cash">去结算</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--3、页面底部-->
+    <footer id="footer">
+    </footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/cart.js"></script>
+</body>
+</html>
